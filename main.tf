@@ -8,13 +8,6 @@ resource "snowflake_database" "db" {
 resource "snowflake_warehouse" "warehouse" {
   name           = "TF_DEMO"
   warehouse_size = "large"
-
-  auto_suspend = 60
-}
-resource "snowflake_warehouse" "warehouse" {
-  name           = "TF_DEMO"
-  warehouse_size = "large"
-
   auto_suspend = 60
 }
 provider "snowflake" {
@@ -87,4 +80,3 @@ output "snowflake_svc_private_key" {
   value     = tls_private_key.svc_key.private_key_pem
   sensitive = true
 }
-
