@@ -5,7 +5,7 @@ provider "snowflake" {
 resource "snowflake_database" "db" {
   name     = "TF_DEMO"
 }
- provider "snowflake" {
+provider "snowflake" {
         alias = "security_admin"
         role  = "SECURITYADMIN"
     }
@@ -75,4 +75,4 @@ output "snowflake_svc_private_key" {
     value = tls_private_key.svc_key.private_key_pem
     sensitive = true
 }
-Back
+
