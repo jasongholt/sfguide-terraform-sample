@@ -1,1 +1,0 @@
-# sfguide-terraform-sample
