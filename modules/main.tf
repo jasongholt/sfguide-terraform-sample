@@ -30,7 +30,7 @@ resource "snowflake_database_grant" "grant" {
 
 resource "snowflake_schema" "schema" {
   database   = snowflake_database.db.name
-  name       = var.schema_name
+  name = var.schema_name
   is_managed = false
 }
 
