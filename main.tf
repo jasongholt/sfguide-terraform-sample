@@ -1,4 +1,4 @@
--module "wh_setup" {
+module "wh_setup" {
 
   source = "github.com/jasongholt/sfguide-terraform-sample/modules"
   admin_role_id = "SYSADMIN"
