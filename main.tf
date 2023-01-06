@@ -6,6 +6,6 @@ module "wh_setup" {
   wh_name = "TF_DEMO_WH"
   wh_size = "large"
   svc_role_name = "TF_DEMO_SVC_ROLE"
-  schema_name = "TF_DEMO_SECHEMA"
+  schema_name = "TF_DEMO_SCHEMA"
   user_id = "tf_demo_user"
 }
